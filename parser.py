@@ -4,16 +4,26 @@ import plex
 
 """
 Grammar:
-<Program> -> Stmt_list #      
+
+
+<Program> -> Stmt_list #  
+
 Stmt_List -> Stmt Stmt_List | e
+
 Stmt -> id = Expr | print Expr
+
 Expr -> Term Term_tail
+
 Term_tail -> AndOrOp Term Term_tail | e
+
 Term -> Factor Factor_tail 
+
 Factor_tail -> NotOp Factor Factor_tail | e
+
 Factor -> (Expr) | id | boolean | e
 
 Notop -> not.
+
 AndOrOp -> or|and.
 """
 
